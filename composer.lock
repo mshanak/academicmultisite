@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "b335375d30f7b3b4816f4e33a77ec378",
+    "content-hash": "e5dd1937e7da4ee2b8bbb95f97f31103",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -894,6 +894,95 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
+        },
+        {
+            "name": "sgpatil/orientdb-php",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sgpatil/orientdb-php.git",
+                "reference": "5db309573bcff87596caf9b6edf7eb79744166f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sgpatil/orientdb-php/zipball/5db309573bcff87596caf9b6edf7eb79744166f6",
+                "reference": "5db309573bcff87596caf9b6edf7eb79744166f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sgpatil\\Orientphp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sumit Patil",
+                    "email": "sgpatil.2803@gmail.com"
+                }
+            ],
+            "description": "PHP Wrapper for the Orientdb database (REST)",
+            "keywords": [
+                "PHP Orientdb Driver",
+                "database",
+                "graph",
+                "orientdb"
+            ],
+            "time": "2016-02-12 12:57:12"
+        },
+        {
+            "name": "sgpatil/oriquent",
+            "version": "v5.2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sgpatil/oriquent.git",
+                "reference": "368ca27620a7b533b9a018a63bc01e26c85c633c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sgpatil/oriquent/zipball/368ca27620a7b533b9a018a63bc01e26c85c633c",
+                "reference": "368ca27620a7b533b9a018a63bc01e26c85c633c",
+                "shasum": ""
+            },
+            "require": {
+                "sgpatil/orientdb-php": "0.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "tests/BaseTest.php"
+                ],
+                "psr-0": {
+                    "Sgpatil\\Orientdb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sumit Patil",
+                    "email": "sgpatil.2803@gmail.com"
+                }
+            ],
+            "description": "Laravel Orientdb Driver",
+            "time": "2016-03-08 10:55:40"
         },
         {
             "name": "swiftmailer/swiftmailer",

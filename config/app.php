@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => 'dev',
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -147,6 +147,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Sgpatil\Orientdb\OrientdbServiceProvider::class,
 
         /*
          * Application Service Providers...

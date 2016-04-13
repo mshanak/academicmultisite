@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use Sgpatil\Orientdb\Schema\Blueprint;
+use Sgpatil\Orientdb\Migrations\Migration;
 
-class CreatePasswordResetsTable extends Migration
-{
-    /**
+class CreatePasswordresetTable extends Migration {
+
+	 /**
      * Run the migrations.
      *
      * @return void
@@ -28,4 +28,5 @@ class CreatePasswordResetsTable extends Migration
     {
         Schema::drop('password_resets');
     }
+
 }

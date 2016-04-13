@@ -17,7 +17,8 @@ class UsersController extends Controller
         $u->name="ibrahim";
         $u->email="ibrahim@ggg.com";
         
-        $u->save();
+        
+        $u->save();dd($u);
         
         
     }

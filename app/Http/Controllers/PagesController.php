@@ -15,6 +15,7 @@ class PagesController extends Controller
     public function index()
     {
         $result= \App\Page::all();
+        dd($result);
         return view("pages.index");
     }
 
@@ -35,7 +36,30 @@ class PagesController extends Controller
      */
     public function store()
     {
-        //
+        /*
+        $user = \App\User::create(['name'=>"Sumit", 'email' => "demo@email.com"]); // Create User node
+        $page = new \App\Page(['title'=>"Sumit", 'email' => "demo@email.com"]); // Create Phone node
+        $relation = $user->pages()->save($page); // Creating relationship
+        */
+        
+        $item=new \App\Page();
+        $item->title="page2";
+        $item->body="this is body2";
+        $item->save();
+       //$item=$item->toArray();
+      //dd($item);
+        $user = new \App\User();
+        $user->name="user1";
+        $user->email="user1@ggg.com";
+        
+        $user->save();
+                echo "userid:".$user->rid; 
+
+        $relation = $item->created_by()->save($user); // Creating relationship*/
+       // $query="create edge CreatedBy from ".$item->rid." to ".$user->rid."";
+       // echo $query;
+       //\Illuminate\Support\Facades\DB::statement($query);
+        
     }
 
     /**

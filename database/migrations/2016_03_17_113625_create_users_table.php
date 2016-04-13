@@ -1,19 +1,19 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
+use Sgpatil\Orientdb\Schema\Blueprint;
+use Sgpatil\Orientdb\Migrations\Migration;
 
-class CreateUsersTable extends Migration
-{
-    /**
+class CreateUsersTable extends Migration {
+
+	    /**
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('Users', function (Blueprint $table) {
+            
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password', 60);
@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -31,4 +30,6 @@ class CreateUsersTable extends Migration
     {
         Schema::drop('users');
     }
+
+
 }

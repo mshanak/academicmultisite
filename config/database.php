@@ -26,8 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
-
+'default' => 'orientdb',
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -51,7 +50,14 @@ return [
             'database' => database_path('database.sqlite'),
             'prefix'   => '',
         ],
-
+    'orientdb' => [
+        'driver' => 'orientdb',
+        'host'   => 'localhost',
+        'port'   => '2480',
+        'database' => 'ppustaff',
+        'username' => 'root',
+        'password' => '123456'
+    ],
         'mysql' => [
             'driver'    => 'mysql',
             'host'      =>  'localhost',
